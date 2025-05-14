@@ -22,15 +22,15 @@ export default function App() {
           <div className="project-cards">
             <div className="project-card">
               <h3>Project 1</h3>
-              <p>A brief description of your project here.</p>
+              <p>Desc</p>
             </div>
             <div className="project-card">
               <h3>Project 2</h3>
-              <p>A brief description of your project here.</p>
+              <p>Desc</p>
             </div>
             <div className="project-card">
               <h3>Project 3</h3>
-              <p>A brief description of your project here.</p>
+              <p>Desc</p>
             </div>
           </div>
         </section>
