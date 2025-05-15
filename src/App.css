@@ -131,10 +131,19 @@ footer a:hover {
   line-height: 1.6;       /* more space between lines */
   margin-bottom: 1.5rem;  /* space below the bio */
 }
-.linkedin-icon {
 
-}
 .social-links a:hover img {
   filter: none;
   transform: scale(1.1); /* optional: slight zoom on hover */
+}
+header h1 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.bio-text {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  line-height: 1.6;
 }
