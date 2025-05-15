@@ -1,40 +1,44 @@
-/* App.css */
-
-/* General Layout */
+/* Reset and base styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
   color: #333;
 }
 
-.container {
+/* Full width header & footer */
+header,
+footer {
   width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 1200px;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 header {
-  text-align: center;
   background-color: #222;
   color: white;
-  padding: 3rem 0;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+footer {
+  background-color: #eee;
 }
 
-header p {
-  margin: 0.5rem 0;
-  font-size: 1.25rem;
+/* Profile picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  /*filter: grayscale(100%);*/
+  border: 4px solid white;
+  margin-bottom: 1rem;
 }
 
-main {
-  padding: 2rem 0;
+/* Container limits content width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 h2 {
@@ -42,53 +46,95 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
 section {
   margin-bottom: 2rem;
 }
 
-.project-cards {
+/* Responsive project grid */
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
 }
 
 .project-card {
   background: white;
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
   border-radius: 8px;
-  transition: transform 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
-footer {
-  background-color: #eee;
-  text-align: center;
-  padding: 1rem;
-}
-
+/* Mobile tweaks */
 @media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-
-  header p {
-    font-size: 1rem;
+  .profile-pic {
+    width: 100px;
+    height: 100px;
   }
 
   h2 {
     font-size: 1.5rem;
   }
+}
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
 
-  h3 {
-    font-size: 1.25rem;
-  }
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  object-fit: contain;       /* ensures the image scales without distortion */
+  image-rendering: auto;     /* improves clarity for larger sizes */
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  filter: none;
+}
+
+footer {
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #333;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #0070f3; /* nice accent color */
+}
+
+.hosted-by {
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #666;
+}
+.bio-text {
+  line-height: 1.6;       /* more space between lines */
+  margin-bottom: 1.5rem;  /* space below the bio */
+}
+.linkedin-icon {
+
+}
+.social-links a:hover img {
+  filter: none;
+  transform: scale(1.1); /* optional: slight zoom on hover */
 }
