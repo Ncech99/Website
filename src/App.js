@@ -92,7 +92,7 @@ function App() {
 
           <section className="contact">
             <h2>Contact</h2>
-            <p>Email: ncech1110@gmail.com</p>
+            <p>Email: ncech1110@gmail[.]com</p>
           </section>
         </main>
       </div>
