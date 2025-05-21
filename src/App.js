@@ -66,7 +66,9 @@ function App() {
           <section className="about">
             <h2>About Me</h2>
               <p className="bio-text">
-                AHHHHHHHHHHHHHHH
+                Hi, I'm Nathan Cech, a Full Stack Developer with a strong focus on web development.
+                While I specialize in building web applications, I’m open to exploring new opportunities in various areas of development.
+                Welcome to my portfolio! Feel free to browse through my projects, and don’t hesitate to reach out if you'd like to connect or collaborate.
               </p>
             </section>
 
