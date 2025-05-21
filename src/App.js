@@ -5,19 +5,19 @@ import { Typewriter } from 'react-simple-typewriter';
 function App() {
   const projects = [
     {
-      title: 'Project 1',
-      description: 'Brief description.',
-      link: 'https://project1.com',
+      title: 'Website - ncech.dev',
+      description: 'Put this site together as a portfolio. Decided to play with React and built this website with it.',
+      link: 'https://github.com/Ncech99/Website',
     },
     {
-      title: 'Project 2',
-      description: 'Brief description.',
-      link: 'https://project2.com',
+      title: 'OfficeShortcut',
+      description: 'I got tired of manually opening incognito mode and typing or clicking on a bookmark to portal.office.com, so I made a Chrome extension that does it all with one button. That’s it! Made with Manifest V3. Published on Chrome Store and MS Edge add on store.',
+      link: 'https://github.com/Ncech99/OfficeShortcut',
     },
     {
-      title: 'Project 3',
-      description: 'Brief description.',
-      link: 'https://project3.com',
+      title: 'Discord Music Bot',
+      description: 'I wanted to listen to music with friends on Discord. At the time, other bots were getting shut down for commercialization, so I made my own! It was JavaScript based, using Discord.js and other dependencies. Due to the constant need to update dependencies and my decreasing interest in using it, the bot has since been shut down. ',
+      link: 'https://github.com/Ncech99/MusicBot',
     },
   ];
 
@@ -30,7 +30,7 @@ function App() {
 
         <h2>
           <Typewriter
-            words={["Full Stack Developer", "Web Specialist","Currently IT"]}
+            words={["Full Stack Developer", "Web Developer"]}
             loop={0}               // loop infinitely
             cursor
             cursorStyle="|"
